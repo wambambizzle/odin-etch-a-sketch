@@ -18,3 +18,7 @@
   border-radius: 8px;
   border: 2px solid black;
 }
+
+.hover-effect {
+  background-color: green;
+}
