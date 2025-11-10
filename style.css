@@ -24,12 +24,11 @@
 
 .grid {
   display: flex;
-  flex: 1 1 0px;
   align-items: stretch;
   align-content: stretch;
-  /* overflow: auto; */
-  /* flex-wrap: wrap; */
-
+  overflow: auto;
+  flex-wrap: wrap;
+  flex: 1 1 0px;
   border: 2px solid black;
 }
 
