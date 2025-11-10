@@ -20,7 +20,7 @@ function setGrid(itemsPerRow = 16) {
   // Fill the grid
   for (let i = 0; i < numberOfItems; i++) {
     const grid = document.createElement("div");
-    grid.className = grid.style.width = widthAndHeight;
+    grid.style.width = widthAndHeight;
     grid.style.height = widthAndHeight;
     grid.style.border = "2px solid black";
     grid.style.boxSizing = "border-box";
