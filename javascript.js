@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 const gridContainer = document.querySelector(".grid-container");
-const gridSizeButton = document.querySelector("#grid-size-button");
+const gridSizeButton = document.querySelector(".grid-size-button");
 const clearButton = document.querySelector(".clear-button");
 const gridWidth = 600;
 const gridHeight = 600;

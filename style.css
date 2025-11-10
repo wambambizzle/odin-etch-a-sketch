@@ -18,7 +18,7 @@
   border: 1px solid black;
 }
 
-#grid-size-button,
+.grid-size-button,
 .clear-button {
   background-color: white;
   color: rgb(68, 68, 157);
