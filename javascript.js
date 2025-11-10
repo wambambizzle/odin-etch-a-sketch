@@ -4,15 +4,11 @@ const gridSizeButton = document.querySelector("#grid-size-button");
 const gridWidth = 600;
 const gridHeight = 600;
 
-gridSizeButton.addEventListener("click", () => {
-  let result = prompt("What size grid would you like? (From 2-100)");
-  // TODO: add the limits greater than or equal to 2 - less than or equal to 100
-  setGrid(Number(result));
-});
+gridSizeButton.addEventListener("click", promptForGridSize);
 
 setGrid();
 
-function setGrid(itemsPerRow = 8) {
+function setGrid(itemsPerRow = 4) {
   gridContainer.innerHTML = "";
 
   // Total number of items
@@ -38,4 +34,14 @@ function setGrid(itemsPerRow = 8) {
 
     gridContainer.appendChild(grid);
   }
+}
+
+function promptForGridSize() {
+  let result = prompt("What size grid would you like? (From 2-100)");
+
+  while (!(result >= 2 && result <= 100)) {
+    result = prompt("What size grid would you like? (From 2-100)");
+  }
+
+  setGrid(result);
 }
