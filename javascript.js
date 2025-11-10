@@ -10,7 +10,7 @@ clearButton.addEventListener("click", clearGridColors);
 
 setGrid();
 
-function setGrid(itemsPerRow = 4) {
+function setGrid(itemsPerRow = 16) {
   gridContainer.innerHTML = "";
 
   // Total number of items
