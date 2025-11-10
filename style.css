@@ -18,9 +18,10 @@
   border: 1px solid black;
 }
 
-#grid-size-button {
+#grid-size-button,
+.clear-button {
   background-color: white;
-  color: blue;
+  color: rgb(68, 68, 157);
   width: 20%;
   border: 2px solid grey;
   border-radius: 8px;
